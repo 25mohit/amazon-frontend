@@ -10,7 +10,7 @@ import AccountDropdown from "../../Dropdown/AccountDropdown";
 const NavbarBelt = () => {
 
   const [language, setLanguage] = useState(false)
-  const [account, setAccount] = useState(true)
+  const [account, setAccount] = useState(false)
 
   return (
     <div className="navbar-belt jcsb">

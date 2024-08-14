@@ -98,7 +98,7 @@
     padding: 0.5rem 0.8rem;
     height: fit-content;
     box-shadow: 5px 5px 10px 2px rgba(34, 34, 34, 0.796);
-    color: red;
+    color: gray;
 }
 .drop-md::after{
     content: '';
@@ -319,4 +319,14 @@
     position: fixed;
     left: 0;
     bottom: 0;
+    animation: show 0.2s linear forwards;
+    opacity: 0;
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
