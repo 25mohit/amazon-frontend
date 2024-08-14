@@ -1,0 +1,21 @@
+.fx{
+  display: flex;
+}
+.aic{
+  display: flex;
+  align-items: center;
+}
+.jcsb{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.jcc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fdc{
+  display: flex;
+  flex-direction: column;
+}

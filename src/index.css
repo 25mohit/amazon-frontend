@@ -1,0 +1,15 @@
+*{
+  --navbar-p-color: #131921;
+  --navbar-s-color: #232f3e;
+  --primary-color: #f08804;
+  --yellow: #febd69;
+  --left: 18%;
+  --right: 25%;
+  --fill-sec-btn-width: 3rem;
+  --navbar-belt-height: 3.6rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
