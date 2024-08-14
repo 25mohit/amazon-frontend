@@ -13,6 +13,7 @@
 }
 .logo > img{
     width: 80%;
+    min-width: 5rem;
 }
 .logo > span{
     width: 20%;

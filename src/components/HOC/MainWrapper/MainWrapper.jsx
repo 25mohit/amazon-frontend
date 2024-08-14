@@ -4,10 +4,10 @@ import Navbar from "../../Utils/Parent/Navbar"
 const MainWrapper = () => {
   return (
     <>
-        <Navbar />
-        <section>
-            <Outlet />
-        </section>
+      <Navbar />
+      <section>
+          <Outlet />
+      </section>
     </>
   )
 }
