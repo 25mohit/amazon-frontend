@@ -1,5 +1,5 @@
 .navbar-belt{
-    padding: 10px 15px;
+    padding: var(--navbar-padding);;
     background-color: var(--navbar-p-color);
     color: white;
     height: var(--navbar-belt-height);
@@ -24,7 +24,7 @@
 .user-location{
     gap: 0.3rem;
 }
-.left-part{
+.navbar-belt .left-part{
     gap: 0.5rem;
     width: var(--left);
 }
@@ -40,26 +40,27 @@
     align-items: end;
     gap: 0.3rem;
 }
-.fill-part{
+.navbar-belt .fill-part{
     width: calc(97% - (var(--left) + var(--right)));
     border-radius: 5px;
     height: 100%;
     overflow: hidden;
     background-color: white;
 }
-.fill-part .search-field{
+.navbar-belt .fill-part .search-field{
     width: 100%;
     height: 100%;
 }
-.fill-part .search-field .category-list{
+.navbar-belt .fill-part .search-field .category-list{
     width: var(--fill-sec-btn-width);
     height: 100%;
     padding: 0 4px;
-    color: #0f1111;
+    color: #404242;
     border: none;
+    font-size: 0.8rem;
     background-color: rgb(241, 241, 241);
 }
-.fill-part .search-field .search-input{
+.navbar-belt .fill-part .search-field .search-input{
     border: none;
     width: 100%;
     height: 80%;
@@ -67,7 +68,7 @@
     padding-left: 0.6rem;
     outline: none;
 }
-.fill-part .search-field .search{
+.navbar-belt .fill-part .search-field .search{
     width: var(--fill-sec-btn-width);
     background-color: var(--yellow);
     height: 100%;
@@ -76,7 +77,7 @@
     color: var(--navbar-p-color);
     font-size: 1.2rem;
 }
-.right-part{
+.navbar-belt .right-part{
     gap: 0.8rem;
     width: var(--right);
 }
@@ -109,4 +110,68 @@
 }
 .cp{
     cursor: pointer;
+}
+.navbar-main{
+    background-color: var(--navbar-s-color);
+    padding: var(--navbar-padding);
+    line-height: 20px;
+}
+.navbar-main a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-main .fill-part{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-grow: 1;
+    overflow: hidden;
+}
+.navbar-main .fill-part .options-container{
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    padding-right: 2rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.options-container::-webkit-scrollbar {
+    display: none; 
+}
+.scroll-right-btn,
+.scroll-left-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    font-size: 1.1rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    padding: 0 5px;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.scroll-right-btn {
+    right: 0;
+}
+
+.scroll-left-btn {
+    left: 45px;
+}
+.navbar-main .fill-part .slider-btn{
+    color: white;
+    gap: 0.3rem;
+}
+.navbar-main .fill-part .options-container > a{
+    white-space: nowrap;
 }
