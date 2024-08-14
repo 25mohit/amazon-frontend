@@ -3,6 +3,7 @@
     background-color: var(--navbar-p-color);
     color: white;
     height: var(--navbar-belt-height);
+    white-space: nowrap;
 }
 .logo{
     width: 8.5rem;

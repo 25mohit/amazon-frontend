@@ -1,10 +1,6 @@
-import Navbar from "../Utils/Parent/Navbar"
-
 const Home = () => {
   return (
-    <div className="home">
-        <Navbar />
-    </div>
+    <div className="home">Home</div>
   )
 }
 

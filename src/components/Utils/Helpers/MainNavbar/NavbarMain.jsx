@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import options from "../../../../MOCData/NavbarOptions.json"
 import { FaBars } from "react-icons/fa6";
 import { useEffect, useRef, useState } from "react";
-import { FaAngleLeft, FaAngleRight, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const NavbarMain = () => {
     const scrollContainerRef = useRef(null);
@@ -15,8 +15,8 @@ const NavbarMain = () => {
             if (container) {
                 const isAtStart = container.scrollLeft === 0;
                 const isAtEnd = container.scrollLeft + container.clientWidth >= container.scrollWidth;
-                setIsScrolled(!isAtStart);  // Show left button if not at start
-                setIsOverflowing(!isAtEnd); // Show right button if not at end
+                setIsScrolled(!isAtStart);
+                setIsOverflowing(!isAtEnd);
             }
         };
 
@@ -29,16 +29,6 @@ const NavbarMain = () => {
         };
         checkOverflow();
         window.addEventListener("resize", checkOverflow);
-
-        // const handleScroll = () => {
-        //     const container = scrollContainerRef.current;
-        //     if (container) {
-        //         const isAtStart = container.scrollLeft === 0;
-        //         const isAtEnd = container.scrollLeft + container.clientWidth >= container.scrollWidth;
-        //         setIsScrolled(!isAtStart);  // Show left button if not at start
-        //         setIsOverflowing(!isAtEnd); // Show right button if not at end
-        //     }
-        // };
 
         const container = scrollContainerRef.current;
         if (container) {
@@ -71,7 +61,7 @@ const NavbarMain = () => {
     <div className="navbar-main">
         <div className="left-part"></div>
         <div className="fill-part fx">
-            <span className="slider-btn aic"><FaBars /> All</span>
+            <span className="slider-btn aic cp"><FaBars /> All</span>
             {isScrolled && (
                 <button className="scroll-left-btn" onClick={scrollLeft}>
                     <FaAngleLeft />
