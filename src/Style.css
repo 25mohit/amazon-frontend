@@ -191,7 +191,7 @@
 .products-group-container{
     gap: var(--gap);
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: center; */
 }
 .products-group-container.carousel{
     background-color: white;
