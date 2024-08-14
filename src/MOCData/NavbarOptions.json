@@ -1,5 +1,9 @@
 [
     {
+        "label": "Fresh",
+        "link": "/amazonpay"
+    },
+    {
         "label": "Amazon Pay",
         "link": "/amazonpay"
     },
