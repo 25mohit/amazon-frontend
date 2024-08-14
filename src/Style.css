@@ -83,6 +83,46 @@
     gap: 0.8rem;
     width: var(--right);
 }
+.navbar-belt .right-part .country-dropdown{
+    position: relative;
+}
+.navbar-belt .right-part .account-dropdown{
+    position: relative;
+}
+.drop-md{
+    position: absolute;
+    background-color: white;
+    top: 130%;
+    z-index: 10;
+    border-radius: 5px;
+    padding: 0.5rem 0.8rem;
+    height: fit-content;
+    box-shadow: 5px 5px 10px 2px rgba(34, 34, 34, 0.796);
+    color: red;
+}
+.drop-md::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    top: -7.5px;
+    transform: rotate(45deg);
+}
+.language-dropdown::after{
+    left: 2.8rem;
+}
+.language-dropdown{
+    width: 15rem;
+}
+.account-option{
+    width: 47rem;
+    right: -7rem;
+}
+.account-option::after{
+    right: 8rem;
+}
+
 .country{
     display: flex;
     align-items: end;
@@ -117,6 +157,7 @@
     background-color: var(--navbar-s-color);
     padding: var(--padding);
     line-height: 20px;
+    height: var(--navbar-main-height);
 }
 .navbar-main a{
     color: white;
@@ -270,4 +311,12 @@
 .link:hover{
     cursor: pointer;
     color: var(--primary-color);
+}
+.modal-overlay{
+    width: 100vw;
+    height: calc(100vh - (var(--navbar-belt-height) + var(--navbar-main-height)));
+    background-color: rgba(34, 34, 34, 0.796);
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
