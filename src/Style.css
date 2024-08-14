@@ -190,19 +190,29 @@
 .products-group-container{
     gap: var(--gap);
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+}
+.products-group-container.carousel{
+    background-color: white;
+}
+.carousel-section .head{
+    width: 100%;
+    gap: 0.6rem;
+    padding: var(--section-pading);
 }
 .ProductsGroupCard{
     width: 100%;
     max-width: 350px;
     background-color: white;
-    padding: 18px;
+    padding: var(--section-pading);
     gap: 0.45rem;
 }
-.ProductsGroupCard .heading{
+.section-heading{
     color: #0f1111;
     font-size: 21px;
     line-height: 27.3px;
+    /* background-color: red; */
+    width: 100%;
     margin-bottom: 2px;
     padding-bottom: 4px;
     font-weight: 600;
@@ -216,8 +226,6 @@
     gap: 2px 6px;
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     margin-bottom: 1px !important;
-}
-.display-card{
 }
 .display-card .img-container{
     width: 100%;
@@ -256,6 +264,7 @@
     color: var(--link-color);
     font-size: 13px;
     text-decoration: none;
+    white-space: nowrap;
 }
 .link:hover{
     cursor: pointer;
