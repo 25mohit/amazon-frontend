@@ -8,6 +8,8 @@ const ProductDisplayCard = ({ data, type }) => {
             { (type === "c1" || type === 'c2') && <span className='label-1'>{data?.label1}</span> }
             { type === "c1" && <span className='label-2'>{data?.label2}</span> }
             { type === "c3" && <span className='label-2'>{data?.label1}</span> }
+            { type === "c5" && <span className='label-2'>{data?.label1}</span> }
+            { type === "c5" && <span className='label-3'>{data?.label2}</span> }
         </footer>
     </div>
   )

@@ -184,6 +184,8 @@
 .section{
     width: 100%;
     max-width: 1500px;
+    gap: var(--gap);
+    padding-bottom: 1rem;
 }
 .products-group-container{
     gap: var(--gap);
@@ -242,6 +244,13 @@
 .label-2{
     font-size: 13px;
     color: #565959;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.label-3{
+    font-size: 21px;
+    color: #0f1111;
 }
 .link{
     color: var(--link-color);

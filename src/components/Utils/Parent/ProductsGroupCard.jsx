@@ -14,9 +14,7 @@ const ProductsGroupCard = ({ data }) => {
                 }
             </section>
         }
-        {
-            data?.type === 'c4' && <section><img src={data?.img} alt="" /></section>
-        }
+        { data?.type === 'c4' && <section><img src={data?.img} alt="" /></section> }
         <Link to={data?.url?.link} className='link'>{data?.url?.label}</Link>
     </div>
   )
