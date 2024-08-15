@@ -5,19 +5,19 @@ export const footData = {
             links:[
                 {
                     label: 'About Us',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Careers',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Press Releases',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Amazon Science',
-                    url: '/'
+                    url: '/a'
                 }
             ]
         },
@@ -26,15 +26,15 @@ export const footData = {
             links:[
                 {
                     label: 'Facebook',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Twitter',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Instagram',
-                    url: '/'
+                    url: '/a'
                 }
             ]
         },
@@ -43,39 +43,39 @@ export const footData = {
             links:[
                 {
                     label: 'Sell on Amazon',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Sell under Amazon Accelerator',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Protect and Build Your Brand',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Amazon Global Selling',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Supply to Amazon',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Become an Affiliate',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Fulfilment by Amazon',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Advertise Your Products',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Amazon Pay on Merchants',
-                    url: '/'
+                    url: '/a'
                 },
             ]
         },
@@ -84,27 +84,27 @@ export const footData = {
             links:[
                 {
                     label: 'Your Account',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Returns Center',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Recalls and Product Safety Alerts',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: '100% Purchase Protection',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Amazon App Download',
-                    url: '/'
+                    url: '/a'
                 },
                 {
                     label: 'Help',
-                    url: '/'
+                    url: '/a'
                 }
             ]
         },
