@@ -107,6 +107,6 @@ export const footData = {
                     url: '/a'
                 }
             ]
-        },
+        }
     ]
 }

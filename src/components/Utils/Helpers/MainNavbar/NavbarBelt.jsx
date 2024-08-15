@@ -11,6 +11,7 @@ const NavbarBelt = () => {
 
   const [language, setLanguage] = useState(false)
   const [account, setAccount] = useState(false)
+  const [isFocused, setIsFocused] = useState(false);
 
   return (
     <div className="navbar-belt jcsb">
@@ -29,12 +30,12 @@ const NavbarBelt = () => {
           </div>
         </div>
       </div>
-      <div className="fill-part aic">
-        <div className="search-field jcsb">
+      <div className={`fill-part aic ${isFocused ? 'focused' : ''}`}>
+        <div className={`search-field jcsb`}>
           <select name="" id="" className="category-list">
             <option value="All">All</option>
           </select>
-          <input type="text" className="search-input" placeholder="Search Amazon.in"/>
+          <input type="text" className="search-input" onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)} placeholder="Search Amazon.in"/>
           <div className="search jcc">
             <BsSearch id="search-icon"/>
           </div>

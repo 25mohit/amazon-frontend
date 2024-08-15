@@ -53,6 +53,9 @@
     width: 100%;
     height: 100%;
 }
+.navbar-belt .fill-part.focused{
+    box-shadow: 0 0 1px 3px var(--primary-color);
+}   
 .navbar-belt .fill-part .search-field .category-list{
     width: var(--fill-sec-btn-width);
     height: 100%;
