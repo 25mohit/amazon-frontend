@@ -162,7 +162,7 @@
 }
 .navbar-main{
     background-color: var(--navbar-s-color);
-    padding: var(--padding);
+    padding: 0 var(--padding);
     line-height: 20px;
     height: var(--navbar-main-height);
 }
@@ -183,7 +183,7 @@
 }
 .navbar-main .fill-part .options-container{
     display: flex;
-    gap: 1rem;
+    /* gap: 1rem; */
     padding: 0 1rem;
     padding-right: 2rem;
     overflow-x: auto;
@@ -225,6 +225,12 @@
 .navbar-main .fill-part .options-container > a{
     white-space: nowrap;
     font-size: 0.85rem;
+    padding: 0.66rem 0.5rem;
+    border: 1px solid transparent;
+}
+.navbar-main .fill-part .options-container > a:hover{
+    border: 1px solid white;
+    border-radius: 2px;
 }
 .layout{
     padding: var(--padding);
