@@ -5,9 +5,14 @@ import { LuChevronsUpDown } from "react-icons/lu";
 import { footData } from '../../../MOCData/FooterData';
 
 const Footer = () => {
+
+  const onClickHandler = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'})
+  }
+  
   return (
     <footer className='fdc'>
-      <Link to="" className='first-row jcc' style={{color: '#FFF'}}>Back to top</Link>
+      <Link className='first-row jcc' onClick={onClickHandler} style={{color: '#FFF'}}>Back to top</Link>
       <section className='second-row fdc'>
         <div className="links-container">
           <div className="cont fx">

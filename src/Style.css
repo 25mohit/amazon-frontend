@@ -375,7 +375,7 @@
 .second-row{
     background-color: var(--navbar-s-color);
     color: white;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 .second-row .heading{
     font-size: 16px;
@@ -415,7 +415,7 @@
 }
 .nav-footer-line{
     border-top: 1px solid #3a4553;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .second-row .lang-sec{
     margin: 10px auto;
@@ -446,7 +446,7 @@
 }
 .lang-sec{
     width: 100%;
-    padding: 2.65rem 0;
+    padding: 1.5rem 0;
 }
 .third-row{
     background-color: var(--footer-color-2);
