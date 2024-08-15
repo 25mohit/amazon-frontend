@@ -83,6 +83,10 @@
     gap: 0.8rem;
     width: var(--right);
 }
+.navbar-belt .right-part a{
+    text-decoration: none;
+    color: white;
+}
 .navbar-belt .right-part .country-dropdown{
     position: relative;
 }
@@ -328,5 +332,36 @@
     }
     100%{
         opacity: 1;
+    }
+}
+.not-found{
+    padding: 1rem;
+}
+.not-found img{
+    width: 10rem;
+}
+.not-found > table > tbody > tr{
+    gap: 1rem;
+}
+.not-found h3{
+    font-size: 1rem;
+}
+.not-found div{
+    margin-top: 1rem;
+}
+.not-found div a{
+    color: #004B91;
+}
+.not-found div a:active{
+    color: var(--primary-color);
+}
+#info-icon{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+@media screen and (max-width: 400px) {
+    .not-found tbody tr{
+        flex-direction: column;
+        align-items: start;
     }
 }

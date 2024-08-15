@@ -50,16 +50,16 @@ const NavbarBelt = () => {
           </div>
           { language && <LanguageDropdown /> }
         </div>
-        <div className="account-dropdown fdc cp" onMouseEnter={() => setAccount(true)}  onMouseLeave={() => setAccount(false)}  onClick={() => setAccount(!account)}>
+        <Link to="gp/your-account" className="account-dropdown fdc cp" onMouseEnter={() => setAccount(true)}  onMouseLeave={() => setAccount(false)}  onClick={() => setAccount(!account)}>
           <span className="line-1-text">Hello, mohit</span>
           <span className="line-2-text">Account & Lists <FaCaretDown /></span>
           { account && <AccountDropdown /> }
-        </div>
-        <div className="user-orders fdc cp">
+        </Link>
+        <Link to="gp/order-history" className="user-orders fdc cp">
           <span className="line-1-text">Returns</span>
           <span className="line-2-text">& Orders</span>
-        </div>
-        <div className="cart-length fx aic cp">
+        </Link>
+        <Link to="gp/cart" className="cart-length fx aic cp">
           <div className="cart-logo">
             <span className="cart-num">0</span>
             <PiShoppingCartSimple id="cart-icon"/>
@@ -68,7 +68,7 @@ const NavbarBelt = () => {
             <span className="line-1-text">&nbsp;</span>
             <span className="line-2-text">Cart</span>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   )
