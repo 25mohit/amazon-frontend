@@ -2,53 +2,30 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { RxGlobe } from "react-icons/rx";
 import { LuChevronsUpDown } from "react-icons/lu";
+import { footData } from '../../../MOCData/FooterData';
 
 const Footer = () => {
   return (
     <footer className='fdc'>
       <Link to="" className='first-row jcc' style={{color: '#FFF'}}>Back to top</Link>
       <section className='second-row fdc'>
-        <div className="links-container fx">
+        <div className="links-container">
           <div className="cont fx">
-            <div className='fdc links'>
-              <h3 className='heading'>Get to Know Us</h3>
-              <ul>
-                <li>Abous Us</li>
-                <li>Careers</li>
-                <li>Sell on Amazon</li>
-                <li>Recalls and Product Safety Alerts</li>
-              </ul>
-            </div>
-            <div className="space"></div>
-            <div className='fdc links'>
-              <h3 className='heading'>Connect with Us</h3>
-              <ul>
-                <li>Abous Us</li>
-                <li>Careers</li>
-                <li>Sell on Amazon</li>
-                <li>Recalls and Product Safety Alerts</li>
-              </ul>
-            </div>
-            <div className="space"></div>
-            <div className='fdc links'>
-              <h3 className='heading'>Make Money with Us</h3>
-              <ul>
-                <li>Abous Us</li>
-                <li>Careers</li>
-                <li>Sell on Amazon</li>
-                <li>Recalls and Product Safety Alerts</li>
-              </ul>
-            </div>
-            <div className="space"></div>
-            <div className='fdc links'>
-              <h3 className='heading'>Let Us Help You</h3>
-              <ul>
-                <li>Abous Us</li>
-                <li>Careers</li>
-                <li>Sell on Amazon</li>
-                <li>Recalls and Product Safety Alerts</li>
-              </ul>
-            </div>
+            {
+              footData?.webLinks?.map((data, index) => (
+                <React.Fragment key={index}>
+                  <div className='fdc links'>
+                    <h3 className='heading'>{data?.heading}</h3>
+                    <ul>
+                      {
+                        data?.links?.map((dt, ind) => <li key={ind}><Link to={dt?.url}>{dt?.label}</Link></li>)
+                      }
+                    </ul>
+                  </div>
+                {index !== footData?.webLinks?.length-1 && <div className="space"></div>}
+                </React.Fragment>
+              ))
+            }
           </div>
         </div>
         <div className="nav-footer-line"></div>

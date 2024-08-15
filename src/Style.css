@@ -383,18 +383,14 @@
     margin: 6px 0 14px 0;
 } 
 .links-container{
-    /* background-color: red; */
     margin: 0 auto;
-}
-.links-container .cont{
-    /* background-color: orange; */
 }
 .space{
     width: 10%;
+    padding: 0 10px;
 }
 .links-container .links{
-    padding: 0 10px;
-    /* background-color: blueviolet; */
+    width: 14rem;
 }
 .links-container ul{
     list-style: none;
@@ -404,8 +400,13 @@
 .links-container ul li{
     font-size: 14px;
     margin: 0 0 10px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     line-height: 120%;
+    color: var(--gray-text-heading);
+}
+
+.links-container ul li a{
+    text-decoration: none;
     color: var(--gray-text-heading);
 }
 .links-container ul li:hover{
