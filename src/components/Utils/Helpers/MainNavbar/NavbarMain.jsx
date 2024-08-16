@@ -3,11 +3,13 @@ import options from "../../../../MOCData/NavbarOptions.json"
 import { FaBars } from "react-icons/fa6";
 import { useEffect, useRef, useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import CategorySidebar from "../../../Section/CategorySidebar/CategorySidebar";
 
 const NavbarMain = () => {
     const scrollContainerRef = useRef(null);
     const [isOverflowing, setIsOverflowing] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const [showCategoryBar, setShowCategoryBar] = useState(null)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -61,7 +63,7 @@ const NavbarMain = () => {
     <div className="navbar-main">
         <div className="left-part"></div>
         <div className="fill-part fx">
-            <span className="slider-btn aic cp"><FaBars /> All</span>
+            <span className="slider-btn aic cp" onClick={() => setShowCategoryBar(true)}><FaBars /> All</span>
             {isScrolled && (
                 <button className="scroll-left-btn" onClick={scrollLeft}>
                     <FaAngleLeft />
@@ -79,6 +81,13 @@ const NavbarMain = () => {
             )}
         </div>
         <div className="right-part"></div>
+        
+        <CategorySidebar showCategoryBar={showCategoryBar} setShowCategoryBar={setShowCategoryBar}/>
+        { showCategoryBar && 
+            <>
+                <div className="modal-overlay-2" onClick={() => setShowCategoryBar(false)}></div>
+            </>
+        }
     </div>
   )
 }
