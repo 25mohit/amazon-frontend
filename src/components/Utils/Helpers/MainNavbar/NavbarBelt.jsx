@@ -4,10 +4,11 @@ import { FaCaretDown } from "react-icons/fa";
 import { PiShoppingCartSimple } from "react-icons/pi";
 import { BsSearch } from "react-icons/bs";
 import LanguageDropdown from "../../Dropdown/LanguageDropdown";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import AccountDropdown from "../../Dropdown/AccountDropdown";
+import SearchResult from "../SearchResult/SearchResult";
 
-const NavbarBelt = () => {
+const NavbarBelt = ({ searchResult }) => {
 
   const [language, setLanguage] = useState(false)
   const [account, setAccount] = useState(false)
@@ -31,11 +32,11 @@ const NavbarBelt = () => {
         </div>
       </div>
       <div className={`fill-part aic ${isFocused ? 'focused' : ''}`}>
-        <div className={`search-field jcsb`}>
+        <div className='search-field jcsb'>
           <select name="" id="" className="category-list">
             <option value="All">All</option>
           </select>
-          <input type="text" className="search-input" onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)} placeholder="Search Amazon.in"/>
+          <input type="text" className="search-input" onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)} placeholder="Search Amazon.in"/>          
           <div className="search jcc">
             <BsSearch id="search-icon"/>
           </div>
@@ -71,6 +72,9 @@ const NavbarBelt = () => {
           </div>
         </Link>
       </div>
+      { isFocused && <SearchResult searchResult={searchResult}/> }
+      { isFocused && <div className="modal-overlay"></div> }
+
     </div>
   )
 }

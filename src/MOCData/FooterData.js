@@ -30,11 +30,11 @@ export const footData = {
                 },
                 {
                     label: 'Twitter',
-                    url: '/a'
+                    url: 'https://x.com/mo_hit24'
                 },
                 {
                     label: 'Instagram',
-                    url: '/a'
+                    url: 'https://www.instagram.com/agarwal_._mohit'
                 }
             ]
         },
