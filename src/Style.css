@@ -73,10 +73,10 @@
     cursor: pointer;
     background-color: rgba(213, 213, 213, 0.547);
 }
-.search-result .result > div > p {
+.search-result .result > p {
     color: rgb(48, 48, 48);
 }
-.search-result .result > div > p > span{
+.search-result .result > p > span{
     color: rgb(30, 30, 30);
     font-weight: 600;
 }

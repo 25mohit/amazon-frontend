@@ -12,7 +12,8 @@ const NavbarBelt = ({ searchResult }) => {
 
   const [language, setLanguage] = useState(false)
   const [account, setAccount] = useState(false)
-  const [isFocused, setIsFocused] = useState(false);
+  const [isFocused, setIsFocused] = useState(true);
+  const [searchInput, setSearchInput] = useState('10')
 
   return (
     <div className="navbar-belt jcsb">
@@ -36,7 +37,7 @@ const NavbarBelt = ({ searchResult }) => {
           <select name="" id="" className="category-list">
             <option value="All">All</option>
           </select>
-          <input type="text" className="search-input" onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)} placeholder="Search Amazon.in"/>          
+          <input type="text" onChange={e => setSearchInput(e.target.value)} value={searchInput} className="search-input" onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)} placeholder="Search Amazon.in"/>          
           <div className="search jcc">
             <BsSearch id="search-icon"/>
           </div>
@@ -72,7 +73,7 @@ const NavbarBelt = ({ searchResult }) => {
           </div>
         </Link>
       </div>
-      { isFocused && <SearchResult searchResult={searchResult}/> }
+      { isFocused && <SearchResult searchInput={searchInput} searchResult={searchResult}/> }
       { isFocused && <div className="modal-overlay"></div> }
 
     </div>

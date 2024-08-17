@@ -5,7 +5,7 @@ const Navbar = () => {
     console.log("Navbar Rendering");
 
     const searchResult = [
-      '<p>i<span>Phone</span> 15 pro max</p>', '<p>i<span>phone</span></p>', '<p>i<span>phone</span> 15 pro</p>', '<p>i<span>pad</span></p>', '<p>i<span>phone</span> 14 plus</p>', '<p>i<span>phone</span> 12</p>', '<p>i<span>phone</span> 14 pro</p>', '<p>i<span>phone</span> 13 pro</p>', '<p>ipad 10th generation'
+      'iPhone 15 pro max', 'iphone', 'iphone 15 pro', 'ipad', 'iphone 14 plus', 'iphone 12', 'iphone 14 pro', 'iphone 13 pro', 'ipad 10th generation'
     ]
     
   return (
