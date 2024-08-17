@@ -12,8 +12,8 @@ const NavbarBelt = ({ searchResult }) => {
 
   const [language, setLanguage] = useState(false)
   const [account, setAccount] = useState(false)
-  const [isFocused, setIsFocused] = useState(true);
-  const [searchInput, setSearchInput] = useState('10')
+  const [isFocused, setIsFocused] = useState(false);
+  const [searchInput, setSearchInput] = useState('')
 
   return (
     <div className="navbar-belt jcsb">
