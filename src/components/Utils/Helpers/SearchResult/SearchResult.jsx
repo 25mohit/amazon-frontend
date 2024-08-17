@@ -2,6 +2,7 @@ import React from 'react'
 import { LuSearch } from "react-icons/lu";
 
 const SearchResult = ({ searchResult }) => {
+
   return (
     <div className='search-result fdc'>
         {

@@ -6,7 +6,7 @@ const NotFound = () => {
   return (
     <center className='not-found'>
         <Link to="/">
-            <img src="./Assets/Images/logo2.svg" alt="" />
+            <img src="/Assets/Images/logo2.svg" alt="Amazon Logo" />
         </Link>
         <table>
             <tbody>

@@ -43,7 +43,7 @@ const Footer = () => {
               <LuChevronsUpDown />
             </div>
             <div className="custom-btn">
-              <img src="./Assets/Images/india-flag.png" alt="" />
+              <img src="/Assets/Images/india-flag.png" alt="" />
               <span>India</span>
             </div>
           </div>

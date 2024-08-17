@@ -18,7 +18,7 @@ const NavbarBelt = ({ searchResult }) => {
     <div className="navbar-belt jcsb">
       <div className="left-part aic">
         <Link to='/' className="logo">
-          <img src="./Assets/Images/logo.png" alt="" />
+          <img src="/Assets/Images/logo.png" alt="" />
           <span>.in</span>
         </Link>
         <div className="user-location aic fx">
