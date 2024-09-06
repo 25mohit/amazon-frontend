@@ -2,6 +2,7 @@ import React from 'react'
 import { RiCloseLargeLine } from "react-icons/ri";
 import { sidebarData } from '../../../MOCData/CategorySidebarData';
 import SidebarOption from '../../Utils/Helpers/Sidebar/SidebarOption';
+import { FaUserCircle } from "react-icons/fa";
 
 const CategorySidebar = ({ setShowCategoryBar, showCategoryBar }) => {
   
@@ -9,7 +10,10 @@ const CategorySidebar = ({ setShowCategoryBar, showCategoryBar }) => {
     <div className={`category-sidebar ${(showCategoryBar !== null && showCategoryBar) ? 'visible':'hidden'}`}>
       <header className='aic'>
         <RiCloseLargeLine id='close-icon' className='cp' onClick={() => setShowCategoryBar(false)}/>
-        asdasd
+        <div className="fx aic" style={{gap:'0.6rem'}}>
+          <FaUserCircle style={{fontSize: '1.5rem'}}/>
+          <h3>Hello, mohit</h3>
+        </div>
       </header>
       <section>
         <ul className='fdc'>
