@@ -21,6 +21,7 @@ const NavbarBelt = ({ searchResult }) => {
         <Link to='/' className="logo">
           <img src="/Assets/Images/logo.png" alt="" />
           <span>.in</span>
+          <b className="beta" title="This Project is in Development Currently!">BETA</b>
         </Link>
         <div className="user-location aic fx">
           <MdOutlineLocationOn />
